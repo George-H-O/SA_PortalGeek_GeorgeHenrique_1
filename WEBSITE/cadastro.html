@@ -1,420 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - ViralWave</title>
+    <title>Pré-Cadastro - Geek Universe 2026</title>
+
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* ===== CSS INTERNO ===== */
-        .contact-intro {
-            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-            padding: 2rem;
-            border-left: 4px solid rosybrown;
-            margin-bottom: 2rem;
-            border-radius: 0.5rem;
-        }
 
-        .contact-intro h2 {
-            color: #2b3035;
-            margin-bottom: 0.5rem;
-        }
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
 
-        .contact-intro p {
-            color: #6b7280;
-        }
-
-        .form-wrapper {
-            position: relative;
-            border: 2px solid rosybrown;
-            border-radius: 0.5rem;
-            overflow: hidden;
-            padding-top: 40px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-badge {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            background-color: rosybrown;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 0.25rem;
-            font-size: 0.75rem;
-            font-weight: 600;
-            z-index: 10;
-        }
-
-        .form-container {
-            background-color: var(--accent-color);
-            border: none;
-            border-radius: 0;
-            padding: 2rem;
-            max-width: 100%;
-            margin: 0;
-            box-shadow: none;
-        }
-
-        .contact-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-            padding: 2rem;
-            background-color: #2b3035;
-            border-radius: 0.5rem;
-            color: white;
-        }
-
-        .info-item {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .info-item h3 {
-            color: white;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 0;
-        }
-
-        .info-item i {
-            color: rosybrown;
-            font-size: 1.5rem;
-        }
-
-        .info-item p {
-            color: rgba(255, 255, 255, 0.8);
-            margin: 0;
-        }
-
-        .info-item a {
-            color: rosybrown;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        .info-item a:hover {
-            color: #f3f4f6;
-            text-decoration: underline;
-        }
-
-        .follow-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .social-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: white;
-            text-decoration: none;
-            padding: 0.75rem 1rem;
-            background-color: rgba(217, 70, 239, 0.2);
-            border-radius: 0.375rem;
-            transition: all 0.3s ease;
-            border: 1px solid rosybrown;
-        }
-
-        .social-link:hover {
-            background-color: rosybrown;
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        .social-link i {
-            font-size: 1.2rem;
-            color: rosybrown;
-        }
-
-        .social-link:hover i {
-            color: white;
-        }
-
-        /* Position Sticky para o formulário */
-        @media (min-width: 1024px) {
-            .form-wrapper {
-                position: sticky;
-                top: 100px;
-            }
-        }
-    </style>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
-    <!-- ===== HEADER COM NAVEGAÇÃO (Flexbox) ===== -->
+
     <header>
-        <div class="header-container">
-            <div style="flex: 1;">
-                <div class="logo">
-                    Viral<span>Wave</span>
-                    <span class="slogan">Impulsionando sua presença online com estratégias que geram resultados.</span>
-                </div>
-            </div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="serviços.html">Serviços</a>
-                <a href="cases.html">Cases</a>
-                <a href="contato.html">Contato</a>
-               
-            </nav>
-        </div>
+
+        <h1>🎮 Geek Universe 2026</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="atracoes.html">Atrações</a>
+            <a href="cronograma.html">Cronograma</a>
+            <a href="cadastro.html">Pré-Cadastro</a>
+        </nav>
+
     </header>
 
     <main>
-        <!-- ===== SEÇÃO DE APRESENTAÇÃO ===== -->
-        <section class="presentation">
-            <div class="section-title">
-                <h1 style="color: #2b3035;"><i class="fas fa-envelope"></i> Fale Conosco</h1>
-            </div>
 
-            <div class="contact-intro">
-                <h2>Pronto para Começar?</h2>
-                <p>
-                    Entramos em contato em até 24 horas para apresentar uma solução personalizada para sua empresa. 
-                    Preencha o formulário abaixo ou entre em contato direto através dos canais disponíveis.
-                </p>
-            </div>
-        </section>
+        <h2 class="titulo-pagina">Pré-Cadastro</h2>
 
-        <!-- ===== INFORMAÇÕES DE CONTATO ===== -->
-        <section class="section">
-            <div class="contact-info">
-                <div class="info-item">
-                    <h3>
-                        <i class="fas fa-envelope"></i> Email
-                    </h3>
-                    <p>
-                        <a href="mailto:contato@viralwave.com.br">contato@viralwave.com.br</a>
-                    </p>
-                    <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
-                        Resposta em até 24 horas
-                    </p>
-                </div>
+        <form id="formCadastro">
 
-                <div class="info-item">
-                    <h3>
-                        <i class="fas fa-phone"></i> Telefone
-                    </h3>
-                    <p>
-                        <a href="tel:+5511999998888">(11) 99999-8888</a>
-                    </p>
-                    <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
-                        Seg-Sex: 9h às 18h
-                    </p>
-                </div>
+            <input
+                type="text"
+                placeholder="Digite seu nome"
+                required>
 
-                <div class="info-item">
-                    <h3>
-                        <i class="fas fa-map-marker-alt"></i> Localização
-                    </h3>
-                    <p style="color: rosybrown; font-size: 0.9rem;">
-                        São Paulo, SP - Brasil
-                    </p>
-                    <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
-                        Estamos em todo o Brasil
-                    </p>
-                </div>
-            </div>
+            <input
+                type="email"
+                placeholder="Digite seu e-mail"
+                required>
 
-            <!-- Redes Sociais -->
-            <div style="text-align: center; margin-top: 2rem;">
-                <h3 style="color: #2b3035; margin-bottom: 1rem;">Acompanhe a ViralWave</h3>
-                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-                    <a href="#" class="social-link" style="background-color: rgba(217, 70, 239, 0.2); border: 1px solid rosybrown; color: rgb(3, 3, 3); text-decoration: none;">
-                        <i class="fab fa-instagram"></i> Instagram
-                    </a>
-                    <a href="#" class="social-link" style="background-color: rgba(217, 70, 239, 0.2); border: 1px solid rosybrown; color: rgb(12, 12, 12); text-decoration: none;">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="#" class="social-link" style="background-color: rgba(217, 70, 239, 0.2); border: 1px solid rosybrown; color: rgb(0, 0, 0); text-decoration: none;">
-                        <i class="fab fa-facebook"></i> Facebook
-                    </a>
-                    <a href="#" class="social-link" style="background-color: rgba(217, 70, 239, 0.2); border: 1px solid rosybrown; color: rgb(8, 8, 8); text-decoration: none;">
-                        <i class="fab fa-youtube"></i> YouTube
-                    </a>
-                </div>
-            </div>
-        </section>
+            <input
+                type="text"
+                placeholder="Digite sua cidade"
+                required>
 
-        <!-- ===== FORMULÁRIO DE CONTATO (HTML Form) ===== -->
-        <section class="section">
-            <div class="form-wrapper">
+            <select required>
 
-                <form class="form-container" method="POST" action="#" novalidate>
-                    <!-- Campo Nome -->
-                    <div class="form-group">
-                        <label for="nome">
-                            <i class="fas fa-user"></i> Nome Completo <span style="color: rosybrown;">*</span>
-                        </label>
-                        <input 
-                            type="text" 
-                            id="nome" 
-                            name="nome" 
-                            placeholder="Digite seu nome completo" 
-                            required 
-                            style="border: 2px solid #d1d5db; padding: 0.75rem;"
-                        >
-                    </div>
+                <option value="">
+                    Selecione a faixa etária
+                </option>
 
-                    <!-- Campo Email -->
-                    <div class="form-group">
-                        <label for="email">
-                            <i class="fas fa-envelope"></i> Email <span style="color: rosybrown;">*</span>
-                        </label>
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            placeholder="seu.email@exemplo.com.br" 
-                            required 
-                            style="border: 2px solid #d1d5db; padding: 0.75rem;"
-                        >
-                    </div>
+                <option>Até 17 anos</option>
+                <option>18 a 30 anos</option>
+                <option>31 a 50 anos</option>
+                <option>Acima de 50 anos</option>
 
-                    <!-- Campo Telefone -->
-                    <div class="form-group">
-                        <label for="telefone">
-                            <i class="fas fa-phone"></i> Telefone <span style="color: rosybrown;">*</span>
-                        </label>
-                        <input 
-                            type="tel" 
-                            id="telefone" 
-                            name="telefone" 
-                            placeholder="(11) 99999-8888" 
-                            required 
-                            style="border: 2px solid #d1d5db; padding: 0.75rem;"
-                        >
-                    </div>
+            </select>
 
-                    <!-- Campo Assunto -->
-                    <div class="form-group">
-                        <label for="assunto">
-                            <i class="fas fa-pencil-alt"></i> Assunto <span style="color: rosybrown;">*</span>
-                        </label>
-                        <select 
-                            id="assunto" 
-                            name="assunto" 
-                            required 
-                            style="border: 2px solid #d1d5db; padding: 0.75rem; background-color: white; cursor: pointer; font-family: 'Inter', sans-serif; font-size: 1rem;"
- >
-                            <option value="">-- Selecione um assunto --</option>
-                            <option value="gestao-redes">Gestão de Redes Sociais</option>
-                            <option value="seo">SEO Completo</option>
-                            <option value="sem">Tráfego Pago (SEM)</option>
-                            <option value="design">Design Gráfico</option>
-                            <option value="conteudo">Criação de Conteúdo</option>
-                            <option value="consultoria">Consultoria Estratégica</option>
-                            <option value="outro">Outro</option>
-                        </select>
-                    </div>
+            <select required>
 
-                    <!-- Campo Mensagem -->
-                    <div class="form-group">
-                        <label for="mensagem">
-                            <i class="fas fa-comments"></i> Mensagem <span style="color: rosybrown;">*</span>
-                        </label>
-                        <textarea 
-                            id="mensagem" 
-                            name="mensagem" 
-                            placeholder="Conte-nos sobre seu projeto, objetivos e desafios..." 
-                            required 
-                            style="border: 2px solid #d1d5db; padding: 0.75rem; font-family: 'Inter', sans-serif; min-height: 150px;"
-                        ></textarea>
-                    </div>
+                <option value="">
+                    Evento de interesse
+                </option>
 
-                    <!-- Checkbox de Consentimento -->
-                    <div style="margin-bottom: 1.5rem; display: flex; gap: 0.75rem; align-items: flex-start;">
-                        <input 
-                            type="checkbox" 
-                            id="consentimento" 
-                            name="consentimento" 
-                            required 
-                            style="width: 20px; height: 20px; margin-top: 0.25rem; cursor: pointer;"
-                        >
-                        <label for="consentimento" style="margin: 0; font-size: 0.9rem; color: #6b7280;">
-                            Concordo em receber comunicações da ViralWave e aceito a 
-                            <a href="#" style="color:rosybrown; text-decoration: none;">Política de Privacidade</a>
-                        </label>
-                    </div>
+                <option>Concurso Cosplay</option>
+                <option>Arena Gamer</option>
+                <option>Painel Anime</option>
+                <option>Workshop de Robótica</option>
+                <option>Realidade Virtual</option>
 
-                    <!-- Botões de Ação -->
-                    <div class="form-buttons">
-                        <button type="submit" class="btn-primary">
-                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
-                        </button>
-                        <button type="reset" class="btn-secondary">
-                            <i class="fas fa-redo"></i> Limpar Formulário
-                        </button>
-                    </div>
+            </select>
 
-                    <p style="font-size: 0.85rem; color: #6b7280; margin-top: 1rem; text-align: center;">
-                        <i class="fas fa-lock"></i> Seus dados estão seguros e protegidos
-                    </p>
-                </form>
-            </div>
-        </section>
+            <button type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                Enviar Pré-Cadastro
+            </button>
 
-        <!-- ===== SEÇÃO DE CONFIANÇA ===== -->
-        <section class="section">
-            <h2 style="text-align: center; margin-bottom: 2rem;">Por que Confiar na ViralWave?</h2>
-            <div class="cards-grid">
-                <div class="card" style="text-align: center;">
-                    <div class="card-icon" style="font-size: 2rem; margin-bottom: 1rem;">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Garantia de Qualidade</h3>
-                    <p>Nos comprometemos com excelência em cada projeto. Se não ficar satisfeito, ajustamos até acertar.</p>
-                </div>
+        </form>
 
-                <div class="card" style="text-align: center;">
-                    <div class="card-icon" style="font-size: 2rem; margin-bottom: 1rem;">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Certificados e Parceiros</h3>
-                    <p>Somos parceiros certificados do Google, Meta e outras plataformas para garantir o melhor desempenho.</p>
-                </div>
-
-                <div class="card" style="text-align: center;">
-                    <div class="card-icon" style="font-size: 2rem; margin-bottom: 1rem;">
-                        <i class="fas fa-users-shield"></i>
-                    </div>
-                    <h3>Privacidade Garantida</h3>
-                    <p>Seus dados e privacidade são sagrados. Seguimos todas as normas de LGPD e proteção de dados.</p>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <!-- ===== FOOTER ===== -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-contact">
-                <div class="footer-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>contato@viralwave.com.br</span>
-                </div>
-                <div class="footer-item">
-                    <i class="fas fa-phone"></i>
-                    <span>(11) 99999-8888</span>
-                </div>
-                <div class="footer-item">
-                    <i class="fas fa-calendar"></i>
-                    <span>© 2024 ViralWave</span>
-                </div>
-            </div>
-            <div class="footer-year">
-                Desenvolvido com <i class="fas fa-heart" style="color: #eb0808;"></i> pela ViralWave
-            </div>
-        </div>
+        <p>© 2026 - Geek Universe | Desenvolvido por George Henrique</p>
     </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>

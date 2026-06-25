@@ -198,3 +198,42 @@ footer {
 .tabela-cronograma tr:hover {
     background-color: #ddd;
 }
+
+/* Página Cadastro */
+
+#formCadastro {
+    width: 500px;
+    max-width: 90%;
+    margin: 30px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+#formCadastro input,
+#formCadastro select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formCadastro button {
+    padding: 12px;
+    border: none;
+    background-color: #6a0dad;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#formCadastro button:hover {
+    background-color: #8e44ad;
+}
