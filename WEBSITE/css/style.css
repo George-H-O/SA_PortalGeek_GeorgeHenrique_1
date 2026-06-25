@@ -1,0 +1,111 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #6a0dad;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+}
+
+/* Pseudo-classe obrigatória */
+nav a:hover {
+    background-color: white;
+    color: #6a0dad;
+    border-radius: 5px;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: linear-gradient(to right, #7b2cbf, #9d4edd);
+    color: white;
+}
+
+.banner h2 {
+    margin-bottom: 20px;
+}
+
+.banner p {
+    margin-bottom: 20px;
+}
+
+.banner button {
+    margin: 10px;
+    padding: 12px 20px;
+    border: none;
+    background-color: #ffbe0b;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Pseudo-classe */
+.banner button:hover {
+    background-color: #fb8500;
+}
+
+/* Descrição */
+.descricao {
+    padding: 40px;
+    text-align: center;
+}
+
+.descricao h2 {
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #6a0dad;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Tema escuro */
+.escuro {
+    background-color: #121212;
+    color: white;
+}
+
+.escuro header,
+.escuro footer {
+    background-color: #000;
+}
+
+.escuro .descricao {
+    color: white;
+}
