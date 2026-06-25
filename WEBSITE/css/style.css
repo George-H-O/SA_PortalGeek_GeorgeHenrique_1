@@ -109,3 +109,92 @@ footer {
 .escuro .descricao {
     color: white;
 }
+
+/* Página de Atrações */
+
+.titulo-pagina {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background-color: #6a0dad;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #8e44ad;
+}
+
+.extra {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Página Cronograma */
+
+.tabela-cronograma {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.tabela-cronograma th,
+.tabela-cronograma td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+.tabela-cronograma th {
+    background-color: #6a0dad;
+    color: white;
+}
+
+.tabela-cronograma tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabela-cronograma tr:hover {
+    background-color: #ddd;
+}
